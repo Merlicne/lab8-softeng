@@ -1,0 +1,7 @@
+*.png
+results/*
+reports/*
+report.html
+output.xml
+log.html
+interactive_console_output.xml
