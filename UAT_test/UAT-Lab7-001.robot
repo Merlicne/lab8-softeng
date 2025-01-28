@@ -9,6 +9,7 @@ Documentation     A test suite containing tests related to invalid login.
 ...               different levels.
 # Test Setup        Start Chrome For Testing
 Resource          resource.robot
+Test Teardown     Close Browser
 # Resource          webdriver.robot
 
 *** Test Cases ***

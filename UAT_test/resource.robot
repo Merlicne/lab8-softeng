@@ -9,7 +9,7 @@ Library           SeleniumLibrary
 *** Variables ***
 ${SERVER}         localhost:7272
 ${BROWSER}        Chrome
-${DELAY}          0
+${DELAY}          0.1
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${FORM URL}    http://${SERVER}/Form.html
@@ -19,13 +19,11 @@ ${COMPLETE URL}      http://${SERVER}/Complete.html
 Open Browser To Form Page
     Set Selenium Speed    ${DELAY}
     Open Browser    ${FORM URL}    ${BROWSER}    
-    Maximize Browser Window
     Form Page Should Be Open
 
 Open Browser To Complete Page
     # Start Chrome For Testing
     Open Browser    ${COMPLETE URL}    ${BROWSER}
-    Maximize Browser Window
     Complete Page Should Be Open
 
 Form Page Should Be Open
